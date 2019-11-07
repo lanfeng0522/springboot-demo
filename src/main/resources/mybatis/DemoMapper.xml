@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.mapper.DemoMapper" >
+
+	
+  <update id="transaction">
+  	update hr_wc_user t set t.status='0' where t.mobile_phone='18505659799'
+  	
+  </update>
+  
+   <update id="transaction2">
+  	update hr_wc_user t set t.remark='测试' where t.mobile_phone='18505659799'
+  	
+  </update>
+
+</mapper>

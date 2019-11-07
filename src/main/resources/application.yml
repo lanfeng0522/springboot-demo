@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: demo
+  profiles:
+       active: local
+  jackson:
+      date-format : yyyy-MM-dd HH:mm:ss
+      time-zone: GMT+8
+
+mybatis:
+  config-location: classpath:mybatis-config.xml
+  mapper-locations: classpath:mybatis/*.xml
+
+pagehelper:
+  helperDialect: Oracle
+  reasonable: true
+  supportMethodsArguments: true
+  pageSizeZero: true
+  params: count=countSql
